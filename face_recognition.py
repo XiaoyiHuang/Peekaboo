@@ -2,7 +2,7 @@ from cv2 import *
 
 
 def grab_webcam_image():
-    cam = VideoCapture(1)
+    cam = VideoCapture(0)
 
     if not cam.isOpened():
         raise IOError("Cannot open webcam")
